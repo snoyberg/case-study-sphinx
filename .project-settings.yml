@@ -4,6 +4,12 @@ module-template: ! 'module MODULE_NAME where
 extensions: {}
 environment: ghc-7.4.2-stable-13.09
 cabal-file: project.cabal
+hidden-packages: ''
 version: 1
-ghc-args: []
+extra-packages: ! 'Hackage: data-binary-ieee754 0.4.4
+
+  Hackage: sphinx 0.6.0'
+ghc-args:
+- -Wall
+- -Werror
 excluded-modules: []
